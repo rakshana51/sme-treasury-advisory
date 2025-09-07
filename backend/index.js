@@ -28,6 +28,9 @@ import transactionRoutes from "./routes/transactions.js";
 import invoiceRoutes from "./routes/invoices.js";
 import forecastRoutes from "./routes/forecast.js";
 import adviceRoutes from "./routes/advice.js";
+import authRoutes from "./routes/auth.js";
+
+app.use("/api/auth", authRoutes);
 
 app.use("/api/transactions", transactionRoutes);
 app.use("/api/invoices", invoiceRoutes);

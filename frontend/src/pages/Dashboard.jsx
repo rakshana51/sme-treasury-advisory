@@ -4,7 +4,7 @@ import BalanceChart from "../components/BalanceChart";
 
 export default function Dashboard() {
   const [forecast, setForecast] = useState(null);
-  const demoUserId = "68bd3e283aa5dd5a5a3e8a97"; // replace with real user id from seed or auth
+  const demoUserId = "68bd6507118ecfd09f700f4c"; // replace with real user id from seed or auth
 
   useEffect(() => {
     // call backend forecast stub
