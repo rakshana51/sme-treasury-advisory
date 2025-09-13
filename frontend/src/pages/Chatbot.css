@@ -1,0 +1,107 @@
+/* Chatbot.css */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(90deg, #DBEAFE 0%, #EDE9FE 100%);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.chat-box {
+  width: 100%;
+  max-width: 720px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.12);
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.chat-header {
+  background: #2563eb;
+  color: #fff;
+  padding: 14px 18px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-window {
+  flex: 1;
+  padding: 18px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.98));
+}
+
+.message {
+  max-width: 72%;
+  padding: 12px 14px;
+  border-radius: 18px;
+  box-shadow: 0 6px 14px rgba(2,6,23,0.06);
+  font-size: 14px;
+  line-height: 1.45;
+  word-break: break-word;
+}
+
+.message.bot {
+  background: #f3f4f6;
+  color: #0f172a;
+  align-self: flex-start;
+  border-bottom-left-radius: 6px;
+}
+
+.message.user {
+  background: #2563eb;
+  color: #ffffff;
+  align-self: flex-end;
+  border-bottom-right-radius: 6px;
+  text-align: right;
+}
+
+.chat-input {
+  display: flex;
+  padding: 12px;
+  border-top: 1px solid #e6e9ee;
+  gap: 8px;
+  align-items: center;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  outline: none;
+}
+
+.chat-input input:focus {
+  box-shadow: 0 0 0 6px rgba(37,99,235,0.08);
+  border-color: #2563eb;
+}
+
+.chat-input button {
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.chat-input button:hover {
+  filter: brightness(0.95);
+}
